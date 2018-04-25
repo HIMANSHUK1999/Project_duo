@@ -66,4 +66,12 @@ void mirror(Node* root)
             q.push(curr->right);
     }
 }
- 
+/* Helper function to print Inorder traversal.*/
+void inOrder(struct Node* node)
+{
+    if (node == NULL)
+        return;
+    inOrder(node->left);
+    cout << node->data << " ";
+    inOrder(node->right);
+} 
