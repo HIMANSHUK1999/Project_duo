@@ -65,9 +65,9 @@ void mirror(Node* root)
         if (curr->right)
             q.push(curr->right);
     }
-}
-<<<<<<< HEAD
-/* Driver program to test mirror() */
+}/*Committing again after adding mirror function in the program*/
+
+/*Driver program to test mirror() */
 int main()
 {
     struct Node *root = newNode(1);
@@ -83,6 +83,9 @@ int main()
  
     /* Convert tree to its mirror */
     mirror(root);
+
+/* COMMiting again after adding mirror function in the program */
+
  
     /* Print inorder traversal of the mirror tree */
     cout << "\n Inorder traversal of the "
@@ -90,7 +93,7 @@ int main()
     inOrder(root);
  
     return 0;
-=======
+
 /* Helper function to print Inorder traversal.*/
 void inOrder(struct Node* node)
 {
@@ -99,5 +102,4 @@ void inOrder(struct Node* node)
     inOrder(node->left);
     cout << node->data << " ";
     inOrder(node->right);
->>>>>>> aa1fb64b1d81b124a8ac2834d47a756bf33d765f
 } 
