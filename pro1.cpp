@@ -66,6 +66,7 @@ void mirror(Node* root)
             q.push(curr->right);
     }
 }
+<<<<<<< HEAD
 /* Driver program to test mirror() */
 int main()
 {
@@ -89,4 +90,14 @@ int main()
     inOrder(root);
  
     return 0;
+=======
+/* Helper function to print Inorder traversal.*/
+void inOrder(struct Node* node)
+{
+    if (node == NULL)
+        return;
+    inOrder(node->left);
+    cout << node->data << " ";
+    inOrder(node->right);
+>>>>>>> aa1fb64b1d81b124a8ac2834d47a756bf33d765f
 } 
